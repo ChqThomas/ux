@@ -38,5 +38,6 @@
         "@swup/plugin/prettier": "link:node_modules/.cache/null",
         "@swup/plugin/shelljs": "link:node_modules/.cache/null",
         "@swup/plugin/shelljs-live": "link:node_modules/.cache/null"
-    }
+    },
+    "version": "0.0.0"
 }
