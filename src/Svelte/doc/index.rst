@@ -18,10 +18,6 @@ Installation
     This package works best with WebpackEncore. To use it with AssetMapper, see
     :ref:`Using with AssetMapper <using-with-asset-mapper>`.
 
-.. caution::
-
-    Before you start, make sure you have `StimulusBundle configured in your app`_.
-
 Install the bundle using Composer and Symfony Flex:
 
 .. code-block:: terminal
@@ -30,10 +26,6 @@ Install the bundle using Composer and Symfony Flex:
 
     $ npm install --force
     $ npm run watch
-
-    # or use yarn
-    $ yarn install --force
-    $ yarn watch
 
 The Flex recipe will automatically set things up for you, like adding
 ``.enableSvelte()`` to your ``webpack.config.js`` file and adding code
@@ -44,9 +36,6 @@ Next, install a package to help Svelte:
 .. code-block:: terminal
 
     $ npm install svelte-loader --save-dev
-
-    # or use yarn
-    $ yarn add svelte-loader --dev
 
 That's it! Any files inside ``assets/svelte/controllers/`` can now be rendered as
 Svelte components.
@@ -160,5 +149,4 @@ https://symfony.com/doc/current/contributing/code/bc.html
 
 .. _`Svelte`: https://svelte.dev/
 .. _`the Symfony UX initiative`: https://ux.symfony.com/
-.. _StimulusBundle configured in your app: https://symfony.com/bundles/StimulusBundle/current/index.html
 .. _the Svelte 4 migration guide: https://svelte.dev/docs/v4-migration-guide#browser-conditions-for-bundlers

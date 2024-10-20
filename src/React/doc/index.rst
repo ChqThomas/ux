@@ -18,10 +18,6 @@ Installation
     This package works best with WebpackEncore. To use it with AssetMapper, see
     :ref:`Using with AssetMapper <using-with-asset-mapper>`.
 
-.. caution::
-
-    Before you start, make sure you have `StimulusBundle configured in your app`_.
-
 Install the bundle using Composer and Symfony Flex:
 
 .. code-block:: terminal
@@ -38,10 +34,6 @@ Next, install a package to help React:
 
     $ npm install -D @babel/preset-react --force
     $ npm run watch
-
-    # or use yarn
-    $ yarn add @babel/preset-react --dev --force
-    $ yarn watch
 
 That's it! Any files inside ``assets/react/controllers/`` can now be rendered as
 React components.
@@ -128,4 +120,3 @@ https://symfony.com/doc/current/contributing/code/bc.html
 
 .. _`React`: https://reactjs.org/
 .. _`the Symfony UX initiative`: https://ux.symfony.com/
-.. _StimulusBundle configured in your app: https://symfony.com/bundles/StimulusBundle/current/index.html

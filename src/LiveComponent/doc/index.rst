@@ -69,10 +69,6 @@ Want some demos? Check out https://ux.symfony.com/live-component#demo
 Installation
 ------------
 
-.. caution::
-
-    Before you start, make sure you have `StimulusBundle configured in your app`_.
-
 Install the bundle using Composer and Symfony Flex:
 
 .. code-block:: terminal
@@ -86,10 +82,6 @@ needed if you're using AssetMapper):
 
     $ npm install --force
     $ npm run watch
-
-    # or use yarn
-    $ yarn install --force
-    $ yarn watch
 
 If your project is localized in different languages (either via the `locale route parameter`_
 or by `setting the locale in the request`_) add the ``{_locale}`` attribute to
@@ -2425,7 +2417,7 @@ the ``loading-template`` option to point to a template:
     <twig:SomeHeavyComponent loading="defer" loading-template="spinning-wheel.html.twig" />
 
     {# With the component function #}
-    {{ component('SomeHeavyComponent', { loading: 'defer', loading-template: 'spinning-wheel.html.twig' }) }}
+    {{ component('SomeHeavyComponent', { loading: 'defer', 'loading-template': 'spinning-wheel.html.twig' }) }}
 
 Or override the ``loadingContent`` block:
 
@@ -2448,7 +2440,7 @@ To change the initial tag from a ``div`` to something else, use the ``loading-ta
 
 .. code-block:: twig
 
-    {{ component('SomeHeavyComponent', { loading: 'defer', loading-tag: 'span' }) }}
+    {{ component('SomeHeavyComponent', { loading: 'defer', 'loading-tag': 'span' }) }}
 
 Polling
 -------
@@ -3759,7 +3751,6 @@ promise. However, any internal implementation in the JavaScript files
 .. _`Twig Component mount documentation`: https://symfony.com/bundles/ux-twig-component/current/index.html#the-mount-method
 .. _`Symfony form`: https://symfony.com/doc/current/forms.html
 .. _`dependent form fields`: https://ux.symfony.com/live-component/demos/dependent-form-fields
-.. _StimulusBundle configured in your app: https://symfony.com/bundles/StimulusBundle/current/index.html
 .. _`attributes variable`: https://symfony.com/bundles/ux-twig-component/current/index.html#component-attributes
 .. _`CollectionType`: https://symfony.com/doc/current/form/form_collections.html
 .. _`the traditional collection type`: https://symfony.com/doc/current/form/form_themes.html#fragment-naming-for-collections
